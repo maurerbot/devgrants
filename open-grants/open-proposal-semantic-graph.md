@@ -18,7 +18,7 @@ Once applied, this content can facilitate novel ways of working.
 
 Early value of a semantic layer on IPFS would, at the very least, improve the user experience for individuals by providing a familiar way of storing and retrieving content bound to their context. Within their context, users can describe content in arbitrary ways including relationships that link off to other content creating a semantic graph. 
 
-These graphs can be added and retrieved across to the network meaning, overtime, a global ontology will begin to emerge as a distributed index. The utility of this index would allow novel ways of building applications.
+These graphs can be added and retrieved across to the network meaning, overtime, a global ontology will begin to emerge as a distributed index. The utility of this index would allow novel ways of building applications and extending IPFS with custom plugins and more.
 
 Imagine a financial institution defining an append only IPLD node called an "account" that can be retrieved by third-party fintechs through authorization via account holder signing keys and multikey encryption for more secure open banking. Or an data scientists linking WASM powered notebooks to datasets with static schemas across governance boundaries and only yielding the results to a new node. Or data engineers assembling data pipelines with idempotent and append-only intermediaries with schema on read and write for more stable transforms and distributed data lake. THe list goes on.
 
@@ -28,33 +28,62 @@ What makes this project difficult is choosing the right interfaces, models, and 
 
 ## Deliverables
 
-Please describe in details what your final deliverable for this project will be. Include a specification of the project and what functionality the software will deliver when it is finished.
-
 ### IPSG
 
-An open source library as a configurable extension/plugin embedded into or wrapping the IPFS daemon.
+An open source library as a configurable extension/plugin embedded into or wrapping the IPFS daemon (TBD). We'd like to work with ProtocolLabs closely on this project to make meaningful decisions that align with the existing projects.
 
 #### Functionality
 
-This library will add new functionality to existing IPFS operations 
+At a high-level, this library will wrap new functionality into IPFS with:
+- A means of configuring a local context using IPNS and multikey to partition a subset of the graph.
+- An interface for managing contexts.
+- An interface for linking CIDs to the graph and there node types.
+- An interface for adding ontologies in a format that can be translated to RDF trites/quads.
+- An in memory graph for swapping in/out one or more graph partitions.
+- An interface searching and referencing of node.
+- A means of adding/retrieving partitions of the RDF graph to to IPFS via IPLD.
 
 ## Development Roadmap
 
-Please break up your development work into a clear set of milestones. This section needs to be very detailed (will vary on the project, but aim for around 2 pages for this section).
+**NOTE:** Due to the size of the project, this roadmap is a bit "hand wavey" but covers the general work to be performed to get a working version of IPSG published.
 
-For each milestone, please describe:
-- The software functionality that we can expect after the completion of each milestone. This should be detailed enough that it can be used to ensure that the software meets the specification you outlined in the Deliverables.
-- How many people will be working on each milestone and their roles
-- The amount of funding required for each milestone
-- How much time this milestone will take to achieve (using real dates)
+### Milestone 1 - Interface & Prototype
+**Estimate**: ~1 Months
+**Team**: All members
+
+This phase will be about defining the proper interface and integrations the IPSG will take. We will need support from ProtocolLabs on this design as it will be the foundation for the entire project.
+
+#### Deliverables
+- A whitepaper for reference on design goals, purpose, and functionality.
+- Interface specification, ideally as code for code generation.
+- Prototype published demonstrating major functionality described above. 
+
+### Milestone 2 - v0.1.0alpha
+**Estimate**: ~2 Months
+**Team**: All members
+
+This phase will be about building out the first version of IPSG as a standalone library with the minimum amount of functionality to provide utility to any early adopters in order to get fast feedback.
+
+#### Deliverables
+- A working version of IPSG that can be installed and configured to work with a forked version of IPFS.
+
+
+### Milestone 3 - Integration (v0.1.0beta)
+**Estimate**: ~3 Months
+**Team**: All members
+
+This phase will be about hardening the IPSG and integration the project.
+
+#### Deliverables
+- A release candidate of IPFS with IPSG integrated.
 
 ## Total Budget Requested
 
 | Milestone | Total |
-|-|-|-|-|
-| Milestone 1 | 10,000 USD |
+|-|-|
+| Milestone 1 | 5,000 USD |
 | Milestone 2 | 10,000 USD |
-| Milestone 3 | 10,000 USD |
+| Milestone 3 | 15,000 USD |
 | **Total** | **30,000 USD** |
 
 **NOTE:** We are asking for the maximum amount to accelerate the development of an existing work stream and fund the work required early on to maintain the project as an open source project.
@@ -67,9 +96,9 @@ Ontologies will be, for the most part, provided by the community but, as a opera
 
 ## Team Members
 
-- Robert Medeiros [GH](https://github.com/crimeminister)
-- Alexander Flanagan [GH](https://github.com/alfl)
-- Adrian Maurer [GH](https://github.com/maurerbot)
+- [Robert Medeiros](https://github.com/crimeminister)
+- [Alexander Flanagan](https://github.com/alfl)
+- [Adrian Maurer](https://github.com/maurerbot)
 
 ## Team Website
 
@@ -89,4 +118,6 @@ The team has worked together multiple times in their career and are all web3 ent
 
 # Additional Information
 
-Proof Zero (operating as kubelt) is a funded startup with a model of building open source tooling for the community and extending that to larger organizations and teams with commercial offerings.
+Proof Zero (operating as kubelt) is a funded startup with a model of building open source tooling for the community and extending that to larger organizations and teams with commercial offerings. As a for profit business, we will also be seeking additional funding in to grow both the open and commercial software.
+
+IPSG a is core to our business and we want to make sure we are making the right decisions that align with the core IPFS, IPLD and Filecoin projects and possibly IPFN. 
