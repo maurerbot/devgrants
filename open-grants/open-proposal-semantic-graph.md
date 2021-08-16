@@ -1,14 +1,14 @@
-# Open Grant Proposal: `IPSG`
+# Open Grant Proposal: IPSG
 
 **Name of Project: IPSG - Interplanetary Semantic Graph**
 
-**Proposer:** `maurerbot`
+**Proposer:** Adrian Maurer [(@maurerbot)](https://github.com/maurerbot) on behalf of [Proof Zero](https://github.com/proofzero)
 
 **Do you agree to open source all work you do on behalf of this RFP and dual-license under MIT and APACHE2 licenses?:** Yes
 
 # Project Description
 
-Pinning content on IPFS is very easy however, indvidual users need to track and maintain a list of CIDs and thier contents. This isn't a very convenient user experience and limits how quickly IPFS can be adopted.
+Pinning content on IPFS is very easy however, individual users need to track and maintain a list of CIDs and thier contents. This isn't a very convenient user experience and limits how quickly IPFS can be adopted.
 
 IPFS is missing a transportable semantic layer that provides an open ontology of content for users, plugins, and other systems. With this semantic layer, built on top of IPLD, content can be organized into a graph and partitioned for individual users or groups of users for discoverability and collaboration.
 
@@ -16,23 +16,27 @@ Once applied, this content can facilitate novel ways of working.
 
 ## Value
 
-Please describe in more detail why this proposal is valuable for the IPFS ecosystem. Answer the following questions:
-- What are the benefits to getting this right?
-- What are the risks if you don't get it right?
-- What are the risks that will make executing on this project difficult?
+Early value of a semantic layer on IPFS would, at the very least, improve the user experience for individuals by providing a familiar way of storing and retrieving content bound to their context. Within their context, users can describe content in arbitrary ways including relationships that link off to other content creating a semantic graph. 
 
-This section should be 1-3 paragraphs long.
+These graphs can be added and retrieved across to the network meaning, overtime, a global ontology will begin to emerge as a distributed index. The utility of this index would allow novel ways of building applications.
 
-Early value of a semantic layer on IPFS would, at the very least, improve the user experience for individuals by providing a familar way of storing and retrieving content bound to their context. Within their context, users can describe content in arbitrary ways including relationships that link off to other content creating a semantic graph. 
+Imagine a financial institution defining an append only IPLD node called an "account" that can be retrieved by third-party fintechs through authorization via account holder signing keys and multikey encryption for more secure open banking. Or an data scientists linking WASM powered notebooks to datasets with static schemas across governance boundaries and only yielding the results to a new node. Or data engineers assembling data pipelines with idempotent and append-only intermediaries with schema on read and write for more stable transforms and distributed data lake. THe list goes on.
 
-These graphs can be exported and imported across contexts meaning, overtime, a global ontology will begin to emerge.
+The risks of not getting this right are the ongoing poorly maintained, centralized datasets containing private information being shared with multiple parties with no governance other than one-sided terms and conditions and privacy policies.
 
-The content is described by the user is also made searchable    This action of exporting enables 
-
+What makes this project difficult is choosing the right interfaces, models, and patterns to make this project scale effectively. Not getting this right may mean a poor user experience and therefore poor adoption.
 
 ## Deliverables
 
 Please describe in details what your final deliverable for this project will be. Include a specification of the project and what functionality the software will deliver when it is finished.
+
+### IPSG
+
+An open source library as a configurable extension/plugin embedded into or wrapping the IPFS daemon.
+
+#### Functionality
+
+This library will add new functionality to existing IPFS operations 
 
 ## Development Roadmap
 
@@ -46,33 +50,43 @@ For each milestone, please describe:
 
 ## Total Budget Requested
 
-Sum up the total requested budget across all milestones, and include that figure here. Also, please include a budget breakdown to specify how you are planning to spend these funds.
+| Milestone | Total |
+|-|-|-|-|
+| Milestone 1 | 10,000 USD |
+| Milestone 2 | 10,000 USD |
+| Milestone 3 | 10,000 USD |
+| **Total** | **30,000 USD** |
+
+**NOTE:** We are asking for the maximum amount to accelerate the development of an existing work stream and fund the work required early on to maintain the project as an open source project.
 
 ## Maintenance and Upgrade Plans
 
-Specify your team's long-term plans to maintain this software and upgrade it over time.
+Ontologies will be, for the most part, provided by the community but, as a operating business we will be maintaining and contributing to the project continuously to ensure a good experience with the right level of functionality and squashing bugs.
 
 # Team
 
 ## Team Members
 
-- Team Member 1 [profile]
-- Team Member 2 [profile]
-- Team Member 3 [profile]
-- ...
+- Robert Medeiros [GH](https://github.com/crimeminister)
+- Alexander Flanagan [GH](https://github.com/alfl)
+- Adrian Maurer [GH](https://github.com/maurerbot)
 
 ## Team Website
 
-Please link to your team's website here (make sure it's `https`)
+[https://kubelt.com](https://kubelt.com)
 
 ## Relevant Experience
 
-Please describe (in words) your team's relevant experience, and why you think you are the right team to build this project. You can cite your team's prior experience in similar domains, doing similar dev work, individual team members' backgrounds, etc.
+The team has 10-20+ years of software development experience each working in small to large gaming studios, marketing, media, startups, financial institutions, telecom, and consulting. Through this experience they've observed the rise of Web2.0 and highly centralized technology and in recent years, due to the lack of innovation, believe we have reached peak Web2.0 tech. 
+
+The team has worked together multiple times in their career and are all web3 enthusiast. We all agree that the semantic web is "remains largely unrealized" and now is the right time for innovation.
 
 ## Team code repositories
 
-Please provide links to your team's prior code repos for similar or related projects.
+[go-multikeypair](https://github.com/proofzero/go-multikeypair)
+[go-ipld-linkstore](https://github.com/proofzero/go-ipld-linkstore)
+[org](https://github.com/proofzero)
 
 # Additional Information
 
-Please include any additional information that you think would be useful in helping us to evaluate your proposal.
+Proof Zero (operating as kubelt) is a funded startup with a model of building open source tooling for the community and extending that to larger organizations and teams with commercial offerings.
