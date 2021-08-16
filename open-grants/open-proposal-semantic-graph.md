@@ -58,7 +58,7 @@ This phase will be about defining the proper interface and integrations the IPSG
 - Interface specification, ideally as code for code generation.
 - Prototype published demonstrating major functionality described above. 
 
-### Milestone 2 - v0.1.0alpha
+### Milestone 2 - v0.1.xalpha
 **Estimate**: ~2 Months
 **Team**: All members
 
@@ -68,7 +68,7 @@ This phase will be about building out the first version of IPSG as a standalone 
 - A working version of IPSG that can be installed and configured to work with a forked version of IPFS.
 
 
-### Milestone 3 - Integration (v0.1.0beta)
+### Milestone 3 - v0.1.xbeta (integration)
 **Estimate**: ~3 Months
 **Team**: All members
 
@@ -112,9 +112,9 @@ The team has worked together multiple times in their career and are all web3 ent
 
 ## Team code repositories
 
-[go-multikeypair](https://github.com/proofzero/go-multikeypair)
-[go-ipld-linkstore](https://github.com/proofzero/go-ipld-linkstore)
-[org](https://github.com/proofzero)
+- [go-multikeypair](https://github.com/proofzero/go-multikeypair)
+- [go-ipld-linkstore](https://github.com/proofzero/go-ipld-linkstore)
+- [org](https://github.com/proofzero)
 
 # Additional Information
 
