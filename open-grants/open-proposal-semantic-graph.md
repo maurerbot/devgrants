@@ -43,6 +43,8 @@ At a high-level, this library will wrap new functionality into IPFS with:
 - An interface searching and referencing of node.
 - A means of adding/retrieving partitions of the RDF graph to to IPFS via IPLD.
 
+Stretch functionality is to support a naming service, (e.g. IPNS+ENS).
+
 ## Development Roadmap
 
 **NOTE:** Due to the size of the project, this roadmap is a bit "hand wavey" but covers the general work to be performed to get a working version of IPSG published.
