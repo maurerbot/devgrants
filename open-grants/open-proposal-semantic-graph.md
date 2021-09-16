@@ -20,7 +20,7 @@ Early value of a semantic layer on IPFS would, at the very least, improve the us
 
 These graphs can be added and retrieved across to the network meaning, overtime, a global ontology will begin to emerge as a distributed index. The utility of this index would allow novel ways of building applications and extending IPFS with custom plugins and more.
 
-Imagine a financial institution defining an append only IPLD node called an "account" that can be retrieved by third-party fintechs through authorization via account holder signing keys and multikey encryption for more secure open banking. Or an data scientists linking WASM powered notebooks to datasets with static schemas across governance boundaries and only yielding the results to a new node. Or data engineers assembling data pipelines with idempotent and append-only intermediaries with schema on read and write for more stable transforms and distributed data lake. THe list goes on.
+Imagine a financial institution defining an append only IPLD node called an "account" that can be retrieved by third-party fintechs through authorization via account holder signing keys and multikey encryption for more secure open banking. Or an data scientists linking WASM powered notebooks to datasets with static schemas across governance boundaries and only yielding the results to a new node. Or data engineers assembling data pipelines with idempotent and append-only intermediaries with schema on read and write for more stable transforms and distributed data lake. Or a p2p email service....the list goes on.
 
 The risks of not getting this right are the ongoing poorly maintained, centralized datasets containing private information being shared with multiple parties with no governance other than one-sided terms and conditions and privacy policies.
 
@@ -43,7 +43,7 @@ At a high-level, this library will wrap new functionality into IPFS with:
 - An interface searching and referencing of node.
 - A means of adding/retrieving partitions of the RDF graph to to IPFS via IPLD.
 
-Stretch functionality is to support a naming service, (e.g. IPNS+ENS).
+Stretch goal is to support a naming service, (e.g. IPNS+ENS).
 
 ## Development Roadmap
 
