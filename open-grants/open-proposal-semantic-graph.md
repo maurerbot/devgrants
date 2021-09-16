@@ -43,7 +43,7 @@ At a high-level, this library will wrap new functionality into IPFS with:
 - An interface searching and referencing of node.
 - A means of adding/retrieving partitions of the RDF graph to to IPFS via IPLD.
 
-Stretch goal is to support a naming service, (e.g. IPNS+ENS).
+Stretch goal is to support a naming service, (e.g. IPNS+ENS) and gossipub for subscribing to partitions.
 
 ## Development Roadmap
 
